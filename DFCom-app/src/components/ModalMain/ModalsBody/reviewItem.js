@@ -18,8 +18,9 @@ function ReviewItem() {
     const CreatUserFormSchema = z.object({
         author: z.string()
             .nonempty('Campo Obrigatório'),
-        rating: z.string()
-            .nonempty('Campo Obrigatório'),
+        rating: z.number({ invalid_type_error: "Deve ser um número" })
+            .min(1, "O valor mínimo é 1")
+            .max(5, "O valor máximo é 5"),
         comment: z.string()
             .nonempty('Campo Obrigatório'),
     })
@@ -55,7 +56,7 @@ function ReviewItem() {
                     autoComplete />
                 {errors.author && <span style={{ color: "red" }}>{errors.author.message}</span>}
                 <label>Avaliar 1 a 5</label>
-                <input type="text" id="rating" {...register('rating')}
+               <input type="number" {...register("rating", { valueAsNumber: true })}
                     onChange={ValueInput}
                     autoComplete />
                 {errors.rating && <span style={{ color: "red" }}>{errors.rating.message}</span>}

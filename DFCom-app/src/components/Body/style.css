@@ -1,0 +1,10 @@
+.bodyBoxColor{
+    background-color: var(--BGcolor2);
+}
+.bodyBox{
+    display: flex;
+    width: var(--boxBGWdt);
+    min-height: 650px;
+    padding: 80px 20px 30px 20px;
+    flex-wrap: wrap;
+}

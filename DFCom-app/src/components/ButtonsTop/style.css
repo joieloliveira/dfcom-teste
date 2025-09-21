@@ -1,0 +1,25 @@
+.buttonsTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: var(--boxBGWdt);
+}
+.buttonsTop > button{
+    border: none;
+    border-radius: var(--btnRadius);
+    background-color: var(--IconBGcolorHover);
+    color: var(--mainText);
+    padding: 14px 20px;
+    margin-top: -26px;
+    margin-bottom: -26px;
+    cursor: pointer;
+    z-index: 99;
+}
+@media(max-width: 480px){
+    .buttonsTop > button{
+        padding: 12px 18px;
+        margin-top: -26px;
+        margin-bottom: -26px;
+        font-size: 10px;
+    }
+}

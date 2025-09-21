@@ -1,0 +1,23 @@
+.headerColor{
+    background-color: var(--BGcolor);
+}
+.headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--boxBGWdt);
+    padding: 10px;
+}
+.headerBox .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainText);
+}
+.headerBox > a img{
+    width: 90px;
+}
+.headerBox .user > img{
+    width: 30px;
+    margin-left: 10px;
+}

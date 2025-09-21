@@ -1,0 +1,39 @@
+.modalBody{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--mainText);
+}
+.modalBody label{
+    margin-top: 10px;
+}
+.modalBody h4{
+    align-self: center;
+}
+.modalBody .modalFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.modalBody .modalFooter button{
+    border: none;
+    border-radius: var(--btnRadius);
+    background-color: var(--IconBGcolorHover);
+    color: var(--mainText);
+    padding: 14px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.modalBody input{
+    border: none;
+    border-radius: var(--btnRadius);
+    background-color: rgb(209, 203, 203);
+    color: var(--mainText);
+    padding: 5px 0;
+    padding-left: 10px;
+}
+.modalBody h6{
+    margin-top: 20px;
+    text-align: center;
+}

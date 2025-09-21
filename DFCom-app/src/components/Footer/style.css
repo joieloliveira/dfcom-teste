@@ -1,0 +1,21 @@
+.footerBoxColor{
+    background-color: var(--BGcolor);
+}
+.footerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--boxBGWdt);
+    color: var(--mainText);
+    height: 60px;
+}
+@media(max-width: 480px){
+    .footerBox{
+        font-size: 12px;
+    }
+}
+@media(max-width: 320px){
+    .footerBox{
+        font-size: 10px;
+    }
+}

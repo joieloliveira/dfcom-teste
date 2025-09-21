@@ -1,0 +1,50 @@
+.itemCard{
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--btnRadius);
+    border: 2px solid var(--IconBGcolor);
+    padding: 10px;
+    color: var(--mainText);
+    width: 160px;
+    height: 290px;
+    margin: 20px;
+}
+.itemCard > img{
+    width: 140px;
+    align-self: center;
+}
+.itemCard > p{
+    margin-bottom: 10px;
+}
+@media(max-width: 450px){
+    .itemCard{
+        padding: 10px;
+        width: 140px;
+        height: 290px;
+        margin: 10px;
+    }
+    .itemCard > img{
+        width: 120px;
+        align-self: center;
+    }
+    .itemCard > p{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 360px){
+    .itemCard{
+        padding: 10px;
+        width: 120px;
+        height: 220px;
+        margin: 10px;
+    }
+    .itemCard > img{
+        width: 100px;
+        align-self: center;
+    }
+    .itemCard > p{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+}

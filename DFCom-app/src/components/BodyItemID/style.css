@@ -1,0 +1,84 @@
+.bodyBoxColor{
+    background-color: var(--BGcolor2);
+}
+.BodyItemID{
+    display: flex;
+    width: var(--boxBGWdt);
+    min-height: 650px;
+    padding: 80px 20px 30px 20px;
+}
+.BodyItemID .itemID{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--mainText);
+    width: 500px;
+    background-color: transparent;
+}
+.BodyItemID .itemID button{
+    border: none;
+    border-radius: var(--btnRadius);
+    background-color: var(--IconBGcolor);
+    color: var(--mainText);
+    padding: 10px 14px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 18px;
+} 
+.BodyItemID .itemID .itemDescription{
+    display: flex;
+} 
+.BodyItemID .itemID .description{
+    display: flex;
+    width: 100%;
+} 
+.BodyItemID .itemID .itemDescription > img{
+    margin-right: 20px;
+    width: 300px;
+} 
+.BodyItemID .itemID .itemDescription .attributes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.BodyItemID .itemID .itemDescription .attributes p{
+    margin-top: 10px;
+} 
+.BodyItemID .itemID span{
+    color: var(--IconBGcolorHover);
+    margin-right: 10px;
+    font-weight: 700;
+} 
+.BodyItemID .itemID .comment{
+    box-shadow: 0 2px 12px rgba(161, 151, 151, 0.15);
+    padding: 10px;
+    min-width: 500px;
+    margin: 10px 0 10px 0;
+} 
+.BodyItemID .itemID .comment .commentButtons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media(max-width: 560px){
+    .BodyItemID .itemID{
+        width: 95%;
+        flex-direction: column;
+    }
+    .BodyItemID .itemID .description{
+        margin-top: 20px;
+    } 
+    .BodyItemID .itemID .itemDescription{
+        display: flex;
+        flex-direction: column;
+    } 
+    .BodyItemID .itemID .itemDescription > img{
+        margin-right: 20px;
+        width: 90%;
+    }
+    .BodyItemID .itemID .comment{
+        min-width: 95%;
+        margin: 10px 0 10px 0;
+    } 
+}

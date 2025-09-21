@@ -1,0 +1,36 @@
+:root {
+  /* Cores. */
+  --BGcolor: #24184A;
+  --BGcolor2: rgb(30, 19, 62);
+  --IconBGcolor: #d1b61d;
+  --IconBGcolorHover: #781f40;
+  --mainText: #ffffff;
+  --BGGray: #f2f2f2;
+  --boxBGWdt: 1500px;
+  --btnRadius: 0.4rem;
+}
+.buttonSlidebar{
+  display: none;
+}
+* {
+  outline: none !important;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body a {
+  text-decoration: none;
+}
+body p, h5, h4, h3, h2, h1, span {
+  margin: 0;
+}
+.mainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.col{
+  flex-direction: column;
+}
+

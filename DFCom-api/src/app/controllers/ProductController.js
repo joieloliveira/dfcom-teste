@@ -134,17 +134,17 @@ class ProductController {
             });
         });
 
-        await Review.deleteOne({ productId: req.params.id }, (err) => {
+        await Review.deleteMany({ productId: req.params.id }, (err) => {
             if (err) return res.status(400).json({
                 error: true,
                 code: 107,
-                message: "Erro: Product não foi excluido com sucesso!"
+                message: "Erro: Reviews não foram excluidos com sucesso!"
             });
         });
 
         return res.json({
             error: false,
-            message: "Product e review excluidos com sucesso!"
+            message: "Product e reviews excluidos com sucesso!"
         });
 
     };
